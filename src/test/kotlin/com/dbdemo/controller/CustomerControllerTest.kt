@@ -169,7 +169,7 @@ internal class CustomerControllerTest(
             val requestedUser = CustomerRequest("newuser", "newuser@gmail.com", "Istanbul")
 
             // if we try to get a GET request then
-            // we must be successfully get the added customer
+            // we should successfully get the added customer
             mockMvc.get("$baseUrl/${requestedUser.username}")
                 .andExpect {
                     status { isOk() }
@@ -231,7 +231,7 @@ internal class CustomerControllerTest(
                         jsonPath("$.city") { value(updatedCustomer.city) }
                     }
                 }
-            // we must be able to get the updated driver at the end
+            // we must be able to get the updated customer at the end
             mockMvc.get("$baseUrl/${createdCustomer.username}")
                 .andExpect {
                     status { isOk() }
@@ -283,7 +283,7 @@ internal class CustomerControllerTest(
                 .andExpect {
                     status { isNoContent() }
                 }
-            // after removing the driver --> if we want to get the driver --> request will result in NOT FOUND
+            // after removing the customer --> if we want to get the customer --> request will result in NOT FOUND
             mockMvc.get("$baseUrl/${sampleUser.username}")
                 .andExpect {
                     status { isNotFound() }
