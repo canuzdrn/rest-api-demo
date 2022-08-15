@@ -6,14 +6,16 @@ import javax.persistence.FetchType
 import javax.persistence.GeneratedValue
 import javax.persistence.Id
 import javax.persistence.OneToMany
+import javax.validation.constraints.NotBlank
 
 
 @Entity
 data class Network(
     @Id
     @GeneratedValue
-    var id: Long = -1,
-    var name: String,
+    val id: Long = -1,
+    @field:NotBlank(message = "Name of network can not be blank")
+    val name: String,
 ) {
 
     @OneToMany(mappedBy = "network", fetch = FetchType.LAZY)
