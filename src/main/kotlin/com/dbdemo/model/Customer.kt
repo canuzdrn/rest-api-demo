@@ -18,7 +18,7 @@ data class Customer(
     @Id
     @GeneratedValue
     val id: Long = 0,
-    @field:Size(min = 3, message = "Username must contain at least 3 characters")
+    @field:Size(min = 3, max = 32, message = "Username must have at least 3 characters")
     val username: String,
     @field:Email(
         message = "Entered email is not valid",

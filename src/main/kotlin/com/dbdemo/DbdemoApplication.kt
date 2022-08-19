@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class DbdemoApplication
 
 fun main(args: Array<String>) {
-	runApplication<DbdemoApplication>(*args)
+    runApplication<DbdemoApplication>(*args)
 }

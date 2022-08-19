@@ -16,7 +16,7 @@ data class Transaction(
     val id: Long = -1,
     @field:Min(value = 1, message = "Less than 1 is not a valid amount (integer)")
     val amount: Int,
-    @field:Size(min = 3, message = "Username must have at least 3 characters")
+    @field:Size(min = 3, max = 32, message = "Username must have at least 3 characters")
     val username: String,
     @field:NotBlank(message = "networkName cannot be blank")
     val networkName: String,
