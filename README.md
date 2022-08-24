@@ -43,5 +43,8 @@
 ![image](https://user-images.githubusercontent.com/99494301/185878180-418e90bc-325a-4386-be5e-4d40226e4554.png)
 
 *Other HTTPS request methods are also available for customers, transactions and networks. You can check their functionalities and status codes in http://localhost:8080/swagger-ui/ *
+---
+#### In order to compose docker-compose file
+### `docker-compose -f docker-compose.yml up -d`
 
 
