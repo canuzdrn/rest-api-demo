@@ -44,7 +44,7 @@
 
 *Other HTTPS request methods are also available for customers, transactions and networks. You can check their functionalities and status codes in http://localhost:8080/swagger-ui/ *
 ---
-#### In order to compose docker-compose file
-### `docker-compose -f docker-compose.yml up -d`
+### In order to compose docker-compose file
+#### `docker-compose -f docker-compose.yml up -d`
 
 
