@@ -1,4 +1,4 @@
-# Spring Boot project for my internship
+# Spring Boot Project For My Internship
 #### RESTful API that includes customers, transactions and networks. Kotlin and Spring Boot technologies are used. I used PostgreSQL database with JPA functionality as my database. Also included JUnit5 unit tests using Mockk library. You can clone this project in IntelliJ IDEA and the application will be running at port 8080 as default. (which can be altered by editing application.properties file)
 ##### server.port= REQUESTED_PORT* 
 ##### *: 2-byte signed integer
